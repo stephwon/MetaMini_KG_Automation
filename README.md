@@ -14,7 +14,7 @@ Before executing the pipelline one should modify some global variables in the `c
   MICROBIOME_KG_DOWNLOAD_URL: 'https://db.systemsbiology.net/gestalt/KG/' # if web address is changed, input correct link
   NODE_SYN_DIR:  # input correct RTX Node Synonymizer path (git repo clone)
 ``` 
-### Step 1: Node Synonymization (Round 1) `run_node_syn_microkg`
+### Step 1: Node Synonymization (Round 1)
 This is the first round of node synonymization. Nodes ID and/or name are passed through [ARAX Node Synonymization](https://github.com/RTXteam/RTX/blob/master/code/ARAX/NodeSynonymizer/node_synonymizer.py) (version 2.10.1). To obtian the ARAX Node Synonymization, clone the repository and follow the git instruction.
 The node ID is used first in Node Synonymizer to get the mapping result, however if the result is not produced then the node `Name` will be used to yield mapping result. If both ID and Name do not provide result, the node will be logged as `failed_both`.
 If either ID or Name produces successfully synonymized nodes mapping results it will store the canonical ID and Name in TSV file. 
