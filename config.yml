@@ -1,0 +1,6 @@
+# Configuration File
+KG_VARIABLES:
+  MICROBIOME_KG_VERSION: 'v0.2.1' # change to correct version of MicroKG data
+  MICROBIOME_KG_DOWNLOAD_URL: 'https://db.systemsbiology.net/gestalt/KG/'
+  NODE_SYN_DIR: '/scratch1/sjw6257/RTX/code/ARAX/NodeSynonymizer/node_synonymizer_v1.0_KG2.10.1.sqlite' # Replace with your RTX directory location
+  
