@@ -16,7 +16,7 @@ Before executing the pipelline one should modify some global variables in the `c
 
 ## Schematic
 The basic schematic of the snakemake pipeline is as followed:
-
+![pipeline shematic diagram](image/schematic.png)
 
 ### Step 1: Node Synonymization (Round 1)
 This is the first round of node synonymization. Nodes ID and/or name are passed through [ARAX Node Synonymization](https://github.com/RTXteam/RTX/blob/master/code/ARAX/NodeSynonymizer/node_synonymizer.py) (version 2.10.1). To obtian the ARAX Node Synonymization, clone the repository and follow the git instruction.
