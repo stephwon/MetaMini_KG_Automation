@@ -1,5 +1,5 @@
 # MetaMini_KG_Automation
-This is a Snakemake automation pipeline that cleans and produces basic output performance statistics of node synonymization mapping.
+This is an automation pipeline that cleans and produces basic output performance statistics of node synonymization mapping.
 
 **Note**: This pipeline is decommissioned due to change in project direction and change in data schema.
 The input Microbiome knowledge-graph (`MicrobiomeKG`) is provided by Glusman Lab at Institute for Systems Biology (ISB).
