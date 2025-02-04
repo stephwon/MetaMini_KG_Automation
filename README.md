@@ -4,16 +4,20 @@ This is an automation pipeline that cleans and produces basic output performance
 **Note**: This pipeline is decommissioned due to change in project direction and change in data schema.
 The input Microbiome knowledge-graph (`MicrobiomeKG`) was provided by Glusman Lab at Institute for Systems Biology (ISB).
 
-## Schematic
-The basic schematic of the snakemake pipeline is as followed:
 
-### Modify `config.yaml` File If Needed 
+## Modify `config.yaml` File If Needed 
 Before executing the pipelline one should modify some global variables in the `config.yml` file. We listed some required variables below:
 ```
   MICROBIOME_KG_VERSION: 'v0.2.1' # change to correct version of MicrobiomeKG data
   MICROBIOME_KG_DOWNLOAD_URL: 'https://db.systemsbiology.net/gestalt/KG/' # if web address is changed, input correct link
   NODE_SYN_DIR:  # input correct RTX Node Synonymizer path (git repo clone)
-``` 
+```
+
+
+## Schematic
+The basic schematic of the snakemake pipeline is as followed:
+
+
 ### Step 1: Node Synonymization (Round 1)
 This is the first round of node synonymization. Nodes ID and/or name are passed through [ARAX Node Synonymization](https://github.com/RTXteam/RTX/blob/master/code/ARAX/NodeSynonymizer/node_synonymizer.py) (version 2.10.1). To obtian the ARAX Node Synonymization, clone the repository and follow the git instruction.
 The node ID is used first in Node Synonymizer to get the mapping result, however if the result is not produced then the node `Name` will be used to yield mapping result. If both ID and Name do not provide result, the node will be logged as `failed_both`.
