@@ -32,7 +32,7 @@ We realized that there were prefixes that needed to be modified and gene names w
 ### Step 4: Failed Both NS 
 This is Round 2(-ish) of Node Synonymization. After cleaning the `failed_both` nodes, we ran these `failed_both` nodes through node synonymization again to obtain mapping result.
 
-
+The scripts for each step used in the snakemake pipeline are located in the `microKG_NS` folder in this repo. 
 To execute this pipeline use the following command below:
 ```bash
   snakemake --cores 16 -s MetaMini_KG_pipeline.smk targets
